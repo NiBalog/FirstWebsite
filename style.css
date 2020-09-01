@@ -1,0 +1,53 @@
+body {
+  background-color:#383838;
+}
+
+.page-selection {
+  background-color:#141414;
+  height:40px;
+  width:40%;
+  border-style:solid;
+  border-radius:20px;
+  border-width:2px;
+  border-color:#808080;
+}
+.home-button {
+  left:7.5%;
+  position:absolute;
+  background-color: #383838;
+  height:25px;
+  width:5%;
+  border-style:solid;
+  border-radius:20px;
+  border-width:2px;
+  border-color:#808080;
+  margin-top: 5px;
+}
+.setup-button {
+  left:17.5%;
+  position:absolute;
+  background-color: #383838;
+  height:25px;
+  width:5%;
+  border-style:solid;
+  border-radius:20px;
+  border-width:2px;
+  border-color:#808080;
+  margin-top: 5px;
+}
+.recommend-button {
+  left:27.5%;
+  position:absolute;
+  background-color: #383838;
+  height:25px;
+  width:5%;
+  border-style:solid;
+  border-radius:20px;
+  border-width:2px;
+  border-color:#808080;
+  margin-top: 5px;
+}
+
+.h1 {
+color: "red";
+}
