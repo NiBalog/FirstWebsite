@@ -1,6 +1,4 @@
-function home() {
-document.getElementById("home-page").style.display = 'none';
-
-
+function Home() {
+document.getElementById("setup-page").style.display = 'block';
 
 }
