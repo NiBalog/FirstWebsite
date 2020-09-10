@@ -4,29 +4,36 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="javascript.js"></script>
   </head>
-  <div class = "page-selection">
-    <h1 class = "title"> THE PROJECTOR WEBSITE </h1>
-    <div class = "home-button" role = "button" onclick = "Home()">
+  <div class = "page-selection" id = "page-selection">
+    <h1 class = "title" role = "button" onclick = "home()"> THE PROJECTOR WEBSITE </h1>
+    <div class = "setup-button" role = "button" onclick = "setup()" id = "page-button1">
       <h1 class = "setup-text"> SETUP </h1> </div>
-    <div class = "setup-button">
+    <div class = "buy-button" role = "button" onclick = "buy()" id = "page-button2">
       <h1 class = "buy-text"> BUY </h1> </div>
-    <div class = "recommend-button">
+    <div class = "specs-button" id = "page-button3" role = "button" onClick = "specs()">
       <h1 class = "specs-text"> SPECS </h1> </div>
+    <div class = "color-button" id = "color-button" role = "button" onClick = "changeColor()"></div>
   </div>
 
 
 
 <body>
+  <div id = "home-page" class  = "home-page" style = "display:block">
+    <h1> Welcome to the Projector Website <h1>
+    <h1> On this website we have explanations of projector specifications, recommended projectors, and even a setup tutorial. <h1>
+    <h1> Dedicated to Russell Cleary, the only person weird enough to use a projector to play video games <h1>
+  </div>
 
   <div id = "setup-page" class = "setup-page" style = "display:none">
-  <h1 style = "font-family:verdana; color: white; text-align: center;"> <b> HOW TO SET UP A PROJECTOR </b> </h1>
-  <h1 style = "font-family:verdana; color: white; text-align: center; font-size: 150%;"> WITH IMAGES </h1>
+    <h1 style = "font-family:verdana; color: white; text-align: center;"> <b> HOW TO SET UP A PROJECTOR </b> </h1>
+    <h1 style = "font-family:verdana; color: white; text-align: center; font-size: 150%;"> WITH IMAGES </h1>
+      <h2><strong> FINDING THE RIGHT LOCATION </strong></h2>
+      <p style = "font-family:verdana; color: white;"> It's very important when setting up a projector that you consider
+        the location you are putting it in. <br> A projector works <strong> best in dark rooms </strong> and should preferably be projecting against a
+        <strong> flat white wall. </strong><br> If you are willing to spend a bit of extra money on a screen
+        to project onto, <strong> it can increase image quality and brightness </strong>, so it is highly recommended </p>
   <!-- STEP ONE -->
-  <h2 style = "font-family:verdana; color: white;"><strong> 1. FINDING THE RIGHT LOCATION </strong></h2>
-  <p style = "font-family:verdana; color: white;"> It's very important when setting up a projector that you consider
-    the location you are putting it in. <br> A projector works <strong> best in dark rooms </strong> and should preferably be projecting against a
-    <strong> flat white wall. </strong><br> If you are willing to spend a bit of extra money on a screen
-    to project onto, <strong> it can increase image quality and brightness </strong>, so it is highly recommended </p>
+
   <img src= "projector1.jpg" alt="projector in the dark on white wall" />
   <!-- STEP TWO -->
   <h2 style = "font-family:verdana; color: white;"><strong> 2. FINDING THE RIGHT HEIGHT </strong></h2>
@@ -47,5 +54,67 @@
     <li> The HDMI cable from your laptop or desktop </li>
   <h2>
   </div>
+
+
+
+
+  <div id = "buy-page" class = "buy-page" style = "display:none">
+    <a href="https://www.amazon.com/Mini-Projector-Smartphone-Compatible-Entertainment/dp/B07QMRRHPY/ref=sr_1_1_sspa?dchild=1&keywords=projector&qid=1599748883&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFKS05WREFSRk9SMDQmZW5jcnlwdGVkSWQ9QTAxNjk0ODkyS0E5RFU5SFQwM0gmZW5jcnlwdGVkQWRJZD1BMDUwNDU4MlMyUTFTQ0kzNDlGUyZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=">
+      <div class = "projectorList" id = "projectorList1">
+        <img src = "100proj.jpg" alt = "budget projector" width = "250" height  = "175" />
+        <h1 class = "projdesc1"> $100 Dollar 1080p projector <h1>
+      </div>
+    </a>
+    <a href = "https://www.amazon.com/VAVA-Theatre-Projector-Lumens-Android/dp/B07XGM6YGQ/ref=sr_1_4?dchild=1&keywords=4k+projector&qid=1599748948&sr=8-4">
+      <div class = "projectorList" id = "projectorList2">
+        <img src = "fancyproj.png" alt = "4k  projector" width = "250" height  = "175" />
+        <h1 class = "projdesc1"> $2799 Home Theatre 4k Projector <h1>
+      </div>
+    </a>
+    <a href = "https://www.amazon.com/Optoma-Projector-Response-Enhanced-Refresh/dp/B084YH1L36/ref=sr_1_1_sspa?dchild=1&keywords=4k+projector&qid=1599749330&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzOUI4T1g4VE1ER0xXJmVuY3J5cHRlZElkPUEwMjEyNzk5MjZBSjlPQllCUkRKOCZlbmNyeXB0ZWRBZElkPUEwNTMxMDA3MUo3RU9EMDNQMkZLUiZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=">
+    <div class = "projectorList" id = "projectorList3">
+      <img src = "gameproj.png" alt = "4k  projector" width = "250" height  = "175" />
+      <h1 class = "projdesc1"> $1299 240hz Gaming projector <h1>
+    </div>
+  </a>
+  </div>
+
+
+
+
+  <div id = "specs-page" class = "specs-page" style = "display:none">
+    <table width = 30%>
+      <tr>
+        <th>Name</th>
+        <th>Resolution</th>
+        <th>Refresh Rate</th>
+        <th>Response Time</th>
+        <th>cost in $</th>
+
+      </tr>
+      <tr>
+        <td>Optoma UHD30</td>
+        <td>4k</td>
+        <td>240hz</td>
+        <td>16ms</td>
+        <td>1300</td>
+      </tr>
+      <tr>
+        <td>Mini Projector</td>
+        <td>1080p</td>
+        <td>60hz</td>
+        <td>--</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>VAVA 4K UHD </td>
+        <td>4k</td>
+        <td>60hz</td>
+        <td>--</td>
+        <td>2800</td>
+      </tr>
+    </table>
+  </div>
+
 </body>
 </html>
