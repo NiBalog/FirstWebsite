@@ -136,3 +136,13 @@ body {
   border-color:#808080;
   border-width:5px;
 }
+
+.setup-titles {
+  font-family:verdana;
+  color: white;
+}
+.text {
+  font-family:verdana;
+  color: white;
+
+}
