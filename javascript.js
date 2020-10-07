@@ -25,9 +25,7 @@ function specs() {
   document.getElementById("specs-page").style.display = 'block';
 }
 
-function changeColor() {
-  if (colorChanges == 0) {
-  document.getElementById("color-button").style.background = "white";
+function changeColor1() {
   document.getElementById("page-selection").style.background = "white";
   document.getElementById("page-button1").style.background = "#D3D3D3";
   document.getElementById("page-button2").style.background = "#D3D3D3";
@@ -41,13 +39,9 @@ function changeColor() {
 
   for (var i=0, max=all.length; i < max; i++) {
  all[i].style.color = "black";
-
 }
-colorChanges += 1
 }
-  else {
-    if (colorChanges == 1) {
-    document.getElementById("color-button").style.background = "black";
+function changeColor2() {
     document.getElementById("page-selection").style.background = "#141414";
     document.getElementById("page-button1").style.background = "#383838";
     document.getElementById("page-button2").style.background = "#383838";
@@ -63,7 +57,4 @@ colorChanges += 1
    all[i].style.color = "white";
 
   }
-  colorChanges = 0
-}
-}
 }
