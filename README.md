@@ -1,2 +1,2 @@
-# Epic first website moment
-test2
+# Bootstrap
+I added an image carousel, badges, image modifications, a navbar dropdown and a collapsable navbar.
